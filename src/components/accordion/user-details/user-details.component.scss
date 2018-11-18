@@ -1,0 +1,47 @@
+$callsign: #008F4C;
+$rain: #C9D3D7;
+.user-details {
+    .header {
+        height: 110px;
+        background-color: $callsign;
+        .user-photograph {
+            height: 150px;
+            width: 150px;
+            position: relative;
+            top: 25px;
+            left: 20px;
+        }
+        .user-title {
+            position: relative;
+            top: -130px;
+            left: 190px;
+            * {
+                color: #FFF;
+                text-transform: uppercase;
+            }
+            h2 {
+                font-size: 1.5rem;
+                line-height: 2rem;
+            }
+          }
+    }
+    .user-contact-details {
+        padding: 6.25rem 1.25rem 2.5rem 1.25rem;
+        border-left: 1px solid $rain;
+        border-right: 1px solid $rain;
+        h4 {
+            text-transform: uppercase;
+        }
+        p {
+            padding: .625rem 0;
+          }
+        span {
+            display: inline-block;
+            font-weight: bold;
+            width: 150px;
+        }
+    }
+    &:last-child {
+        border-bottom: 1px solid $rain;
+    }
+}

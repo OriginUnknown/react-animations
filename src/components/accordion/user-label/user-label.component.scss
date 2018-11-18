@@ -1,0 +1,49 @@
+$rain: #C9D3D7;
+$powder: #EDF1F2;
+.user-labels {
+    display: flex;
+    padding: 1rem;
+    border-top: 1px solid $rain;
+    border-left: 1px solid $rain;
+    border-right: 1px solid $rain;
+    div, p {
+        width: 31.6667%;
+    }
+    &.to-uppercase {
+        text-transform: uppercase;
+    }
+    &.bold {
+        font-weight: bold;
+    }
+    &.with-caret {
+        border-left: 1px solid $rain;
+        border-right: 1px solid $rain;
+        .caret {
+            width: 5%;
+            background-image: url('../../../assets/down-caret.svg');
+            background-repeat: no-repeat;
+            background-position: center;
+            transition: all .4s;
+            cursor: pointer;
+            &.animate-on-open-caret {
+                transform: rotate(180deg);
+                // animation-name: openCaret;
+                // animation-duration: .4s;
+                // animation-timing-function: ease-in-out;
+            }
+        }
+    }
+    &:last-child {
+        border-bottom: 1px solid $rain;
+    }
+    &:nth-child(even) {
+        background-color: $powder;
+    }
+    .user-checkbox-label {
+        display: flex;
+        align-items: baseline;
+        label {
+            margin-left: 1rem;
+        }
+    }
+}
